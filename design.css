@@ -1,3 +1,7 @@
+body {
+    background: radial-gradient(#e66465, #5d85cf);
+}
+
 .counter{
     color: rgba(135, 206, 250, 0);;
     position: fixed;
@@ -5,6 +9,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 2500%;
+    pointer-events: none
 }
 
 #counterInt {
@@ -38,8 +43,8 @@
 
 @keyframes visibility {
     0% {color: rgba(135, 206, 250, 0);}
-    7% {color: rgba(135, 206, 250,1);}
-    10% {color: rgba(135, 206, 250,1);}
+    7% {color: rgba(75, 183, 250,1);}
+    10% {color: rgba(75, 183, 250,1);}
     18% {color: rgba(135, 206, 250,1);}
     25% {color: rgba(135, 206, 250,0);}
     100% {color: rgba(135, 206, 250,0);}
