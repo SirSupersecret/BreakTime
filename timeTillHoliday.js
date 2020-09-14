@@ -15,7 +15,50 @@ var dates = [
     new Date('December 24, 2022')
 ]
 
-function getDaysTillHoliday(){
+var randomText = [
+    "CONFUSION",
+    "???",
+    "GUESS",
+    "DIMENSION",
+    "FOCUS",
+    "REALITY",
+    "BRAINDEAD",
+    "ABSTRACT",
+    "PIE",
+    "WHY?",
+    "HOW?",
+    "WHAT?",
+    "UNDERSTAND",
+    "RANDOM",
+    "TIME",
+    "UNDEFINED"
+]
+
+function load(){
+    console.log("yay")
+    
+    countDaysInt();
+    countDaysBinary();
+    countDaysHex();
+    pickRandomLine();
+}
+
+function countDaysInt(){
+    
+    document.getElementById("counterInt").innerHTML = getDays().toString();    
+}
+
+function countDaysHex(){
+    
+    document.getElementById("counterHex").innerHTML = getDays().toString(16);    
+}
+
+function countDaysBinary(){
+    
+    document.getElementById("counterBinary").innerHTML = getDays().toString(2);    
+}
+
+function getDays(){
     var today = new Date()
     var found = false;
     var daysTillHoliday = 9999999999
@@ -30,7 +73,15 @@ function getDaysTillHoliday(){
             }
         }
     });
-    document.getElementById("Counter").innerHTML = daysTillHoliday.toString();    
+    return daysTillHoliday;
+}
+
+function pickRandomLine(){
+
+    // pick a random number between 1 and 10
+    var r0 = Math.floor(Math.random() * (randomText.length))
+    console.log(r0)
+    document.getElementById("justSomeText0").innerHTML = randomText[r0]
 }
 
 function datediff(date1, date2) {

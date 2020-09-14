@@ -1,0 +1,46 @@
+.counter{
+    color: rgba(135, 206, 250, 0);;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2500%;
+}
+
+#counterInt {
+    animation-name: visibility;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+#counterBinary {
+    animation-name: visibility;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-delay: 10s;
+}
+
+#counterHex {
+    animation-name: visibility;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-delay: 15s;
+}
+
+#justSomeText0 {
+    font-size: 1500%;
+    animation-name: visibility;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+}
+
+
+@keyframes visibility {
+    0% {color: rgba(135, 206, 250, 0);}
+    7% {color: rgba(135, 206, 250,1);}
+    10% {color: rgba(135, 206, 250,1);}
+    18% {color: rgba(135, 206, 250,1);}
+    25% {color: rgba(135, 206, 250,0);}
+    100% {color: rgba(135, 206, 250,0);}
+}
