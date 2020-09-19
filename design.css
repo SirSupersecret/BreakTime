@@ -1,4 +1,12 @@
-body {
+.counter {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30vw;
+}
+
+/*body {
     background: radial-gradient(#e66465, #5d85cf);
 }
 
@@ -74,4 +82,4 @@ body {
     18% {color: rgba(135, 206, 250,1);}
     25% {color: rgba(135, 206, 250,0);}
     100% {color: rgba(135, 206, 250,0);}
-}
+}*/

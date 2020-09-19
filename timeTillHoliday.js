@@ -45,7 +45,8 @@ function load(){
 
 function countDaysInt(){
     
-    document.getElementById("counterInt").innerHTML = getDays().toString();    
+    document.getElementById("counterInt").innerHTML = getDays().toString();
+    //document.body.style.font    
 }
 
 function countDaysHex(){
