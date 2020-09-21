@@ -1,9 +1,12 @@
 var dates = [
-    new Date('October 27, 2020'),
+    new Date('October 26, 2020'),
+    new Date('December 7, 2020'),
     new Date('December 24, 2020'),
     new Date('Febuary 15, 2021'),
     new Date('March 27, 2021'),
+    new Date('May 14, 2021'),
     new Date('May 22, 2021'),
+    new Date('June 4, 2021'),
     new Date('July 10, 2021'),
     new Date('October 27, 2021'),
     new Date('December 24, 2021'),
