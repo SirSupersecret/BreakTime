@@ -18,6 +18,8 @@ var dates = [
     new Date('December 24, 2022')
 ]
 
+var theDate = new Date('October 6, 2020')
+
 var randomText = [
     "CONFUSION",
     "???",
@@ -39,17 +41,26 @@ var randomText = [
 
 function load(){
     console.log("yay")
-    
+
+    setSidenote();
     countDaysInt();
     countDaysBinary();
     countDaysHex();
     pickRandomLine();
+    
+}
+
+function setSidenote(){
+    var today = new Date(new Date().toDateString())
+    if(today.toString() == theDate.toString()){
+        document.getElementById("sidenote").innerHTML = "Don't vote for HER"
+        document.getElementById("counterInt").style.animationPlayState = "running"
+    }
 }
 
 function countDaysInt(){
     
     document.getElementById("counterInt").innerHTML = getDays().toString();
-    //document.body.style.font    
 }
 
 function countDaysHex(){

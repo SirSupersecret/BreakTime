@@ -9,6 +9,31 @@
     border-style: solid;
     border-width: 0.3vw;
     border-radius: 5px;
+    animation-name: important;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: step-start;
+    animation-play-state: paused;
+}
+
+#sidenote {
+    position: fixed;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1vw;
+    color: black;
+    animation-name: important;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: step-start;
+}
+
+@keyframes important {
+    25% {color: black}
+    50% {color: red}
+    75% {color: black}
+    100% {color: red}
 }
 
 /*body {
