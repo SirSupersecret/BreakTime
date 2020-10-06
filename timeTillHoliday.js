@@ -18,7 +18,7 @@ var dates = [
     new Date('December 24, 2022')
 ]
 
-var theDate = new Date('October 6, 2020')
+var theDate = new Date('October 7, 2020')
 
 var randomText = [
     "CONFUSION",
