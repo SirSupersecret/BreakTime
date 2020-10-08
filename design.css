@@ -18,15 +18,11 @@
 
 #sidenote {
     position: fixed;
-    top: 95%;
+    top: 93%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 1vw;
     color: black;
-    animation-name: important;
-    animation-duration: 0.8s;
-    animation-iteration-count: infinite;
-    animation-timing-function: step-start;
 }
 
 @keyframes important {

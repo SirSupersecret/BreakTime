@@ -18,8 +18,6 @@ var dates = [
     new Date('December 24, 2022')
 ]
 
-var theDate = new Date('October 7, 2020')
-
 var randomText = [
     "CONFUSION",
     "???",
@@ -51,11 +49,6 @@ function load(){
 }
 
 function setSidenote(){
-    var today = new Date(new Date().toDateString())
-    if(today.toString() == theDate.toString()){
-        document.getElementById("sidenote").innerHTML = "Don't vote for HER"
-        document.getElementById("counterInt").style.animationPlayState = "running"
-    }
 }
 
 function countDaysInt(){
